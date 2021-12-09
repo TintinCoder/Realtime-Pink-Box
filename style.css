@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.main-title {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+.sub-title {
+    color: chocolate;
+    font-weight: bolder;
+    text-align: center;
+    padding: 12px;
+}
+
+canvas {
+    border: 10px solid chocolate;
+    border-radius: 10px;
+    /* height: 900px;
+    width: 900px; */
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 10px white;
+    animation-name: textAnime;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+/* Adding animation for footer text */
+@keyframes textAnime {
+    from {
+        text-shadow: 1px 1px 10px white;
+    }
+    to {
+        text-shadow: 1px 1px 20px black;
+    }
+}
